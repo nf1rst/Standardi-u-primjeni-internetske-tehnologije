@@ -1,0 +1,253 @@
+body {
+    background-image: url(../img/pocetna-pozadina.jpg);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    width: 80%;
+    background-color: rgb(21, 21, 21);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px;
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#content #slogan {
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+#content #slogan p {
+    color: purple;
+}
+
+#content #slogan #zaiskri {
+    color: orange;
+    text-transform: uppercase;
+}
+
+#content #contactInfo {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    display: flex;
+    /*jer je input sam po sebi inline block kojeg ne mozes centrirat pa mroas flex*/
+    justify-content: center;
+}
+
+#content #kontakt {
+    font-size: 1.8em;
+    border: none;
+    background-color: rgb(21, 21, 21);
+    color: orange;
+}
+
+
+#content #izbornik {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 35px;
+}
+
+#content #izbornik ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#content #izbornik ul li {
+    width: 50%;
+    text-align: center;
+    padding: 1%;
+}
+
+#content #izbornik ul li i {
+    width: 100%;
+}
+
+#content #izbornik ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#content #izbornik ul li a i{
+font-size: 4em;
+margin-bottom: 5%;
+}
+
+#izbornik #kolegijiLinkPocetna{
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#kolegijiLinkPocetna:hover{
+    background-color: purple;
+    border-radius: 25px;
+}
+
+#izbornik #kolegijiLinkPocetna i{
+    font-size: 4em;
+}
+
+#content #contactInfo #kontakt:hover {
+    color: purple;
+}
+
+#content #contactInfo i { /*da se ikona od kontakta ne prikazuje - inace se poremeti cijeli popupjs*/
+    display: none;
+}
+
+#content #izbornik ul li:hover {
+    background-color: purple;
+    border-radius: 25px;
+}
+
+#content #contactInfo i { /*da se ikona od kontakta ne prikazuje - inace se poremeti cijeli popupjs*/
+    display: none;
+}
+/*vise nije potrebno - kolegiji su premijesteni izvan ul u izborniku*/
+
+#content #paragrafPrijava {
+    background: linear-gradient(rgb(226, 96, 15), rgba(171, 22, 182, 0.902));
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+    font-size: 3em;
+    border-radius: 25px;
+}
+
+#content #paragrafPrijava #linkPrijava {
+    color: white;
+    text-decoration: none;
+}
+
+#content #paragrafPrijava:hover {
+    box-shadow: 0 0 20px purple;
+}
+
+
+#content #menu ul li #kontakt {
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: rgb(32, 32, 32);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+#content #menu ul li #kontakt:hover {
+    color: orange;
+}
+
+#backgroundVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#nofitikacijaContainer {
+    z-index: 10000;
+    background:linear-gradient(to right, red,rgb(206, 98, 9));
+    margin-top: 1%;
+    padding: 0.5%;
+    width: 10%;
+    position:fixed ;
+    top: 0;
+    right: 0;
+    border-radius: 25px;
+    border: 1px solid white;
+    right: -250px;
+    opacity: 0;
+
+    transition: right 0.5s, opacity 0.5s ease;
+}
+
+#nofitikacijaContainer.show{
+    opacity: 1;
+    right: 20px;
+}
+
+#nofitikacijaContainer h4 i{
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    /*za mobitele da radi*/
+
+
+    #content #izbornik {
+        width: 100%;
+        padding: 0;
+    }
+
+    #content #izbornik ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #content #izbornik ul li {
+        width: 100%;
+        padding: 1.5em 0;
+    }
+
+    #content #izbornik ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.4em;
+    }
+
+    #content #izbornik ul li a i {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+
+    #paragrafPrijava #linkPrijava {
+        font-size: 0.5em;
+        margin: auto;
+        text-align: center;
+    }
+
+    #NewsletterGroup label{
+        font-size: 1em;
+    }
+
+    #izbornik #kolegijiLinkPocetna{
+        width: 95%;
+        display: block;
+        font-size: 1.4em;
+    }
+    
+    #izbornik #kolegijiLinkPocetna i{
+        display: block;
+        margin-bottom: 0.5em;
+    }
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registracija.css">
+    <title>Registracija</title>
+
+    <script src="javascript/popupKontakt.js" defer></script>
+    <link rel="stylesheet" href="css/izbornaTraka.css">
+    <script src="javascript/authCheck.js" defer></script>
+    <script src="javascript/registracija.js" defer></script>
+    <!-- Font Awesome je samo za ikone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- jQuery da radi izbornatraka.js-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="javascript/ikoneIzbornatraka.js" defer></script>
+    <script src="javascript/popupKontakt.js" defer></script>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modalKontakt.css">
+
+</head>
+
+<body>
+    <div id="content">
+        <div id="menu">
+            <ul>
+                <li><a href="login.html" id="loginLink">Prijavi se</a></li>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="oNama.html">O nama</a></li>
+                <li><a href="novosti.html">Novosti</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="drustveneMreze.html">Profili</a></li>
+                <li><button id="kontakt">Kontakt</button></li>
+                <li><a href="kolegiji.html" id="kolegijiLink" style="display:none;">Nastavni sadržaj</a></li>
+            </ul>
+        </div>
+
+
+        <div id="nofitikacijaContainer">
+
+        </div>
+
+
+        <div class="modal" id="modal">
+            <div class="modal-inner">
+                <div class="modal-header">
+                    <h2>Kontaktrirajte nas</h2>
+                    <button id="closeModal">&times;</button>
+                </div>
+                <form action="https://www.fulek.com/mvc/supit/project-contact-form" id="contactForm">
+                    <label for="FullName">Puno ime</label>
+                    <input type="text" id="FullName" name="FullName" requied>
+                    <label for="Email">E-mail</label>
+                    <input type="email" name="Email" id="Email" required>
+                    <label for="Importance">Važnost poruke</label>
+                    <select name="Importance" id="Importance">
+                        <option value="niska">Niska</option>
+                        <option value="visoka">Visoka</option>
+                    </select>
+                    <label for="Message">Poruka</label>
+                    <textarea name="Message" id="Message" required></textarea>
+                    <div id="NewsletterGroup">
+                        <label for="ReceiveNewsletter">Želim primati obavijesti</label>
+                        <input type="checkbox" name="ReceiveNewsletter" id="ReceiveNewsletter" value="true">
+                    </div>
+                    <input type="submit" value="Pošalji" id="send">
+                </form>
+            </div>
+        </div>
+
+
+        <h2 id="title">Registracija korisnika</h2>
+        <div id="register">
+            <form id="registerForm" onsubmit="izvrsiRegistraciju(event)">
+                <label for="username">Korisničko ime</label>
+                <input type="text" id="username" required>
+
+                <label for="password">Lozinka</label>
+                <input type="password" id="password" required>
+
+                <input type="submit" value="Registriraj se" id="submit">
+                <p id="error"></p>
+                <a id="natrag" href="login.html">Natrag na prijavu</a>
+            </form>
+        </div>
+
+
+    </div>
+
+    <div id="footerLogo">
+        <img src="img/Algebra-logo.png" alt="Algebra logo">
+        <p>Visoko sveučilište Algebra Bernays</p>
+    </div>
+
+</body>
+
+</html>

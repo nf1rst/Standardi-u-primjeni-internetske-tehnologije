@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novost 2</title>
+    <link rel="stylesheet" href="./css/novosti2,3.css">
+    <script src="javascript/popupKontakt.js" defer></script>
+    <script src="javascript/authCheck.js" defer></script>
+    <link rel="stylesheet" href="css/izbornaTraka.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="javascript/ikoneIzbornatraka.js" defer></script>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modalKontakt.css">
+    <script src="javascript/saltanjeNovosti.js" defer></script>
+
+</head>
+
+<body>
+    <div id="content">
+        <div id="menu">
+            <ul>
+                <li><a href="login.html" id="loginLink">Prijavi se</a></li>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="oNama.html">O nama</a></li>
+                <li><a href="novosti.html">Novosti</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="drustveneMreze.html">Profili</a></li>
+                <li><button id="kontakt">Kontakt</button></li>
+                <li><a href="kolegiji.html" id="kolegijiLink" style="display:none;">Nastavni sadržaj</a></li>
+            </ul>
+        </div>
+
+        <div id="nofitikacijaContainer">
+
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-inner">
+                <div class="modal-header">
+                    <h2>Kontaktrirajte nas</h2>
+                    <button id="closeModal">&times;</button>
+                </div>
+                <form action="https://www.fulek.com/mvc/supit/project-contact-form">
+                    <label for="FullName">Puno ime</label>
+                    <input type="text" id="FullName" name="FullName" requied>
+                    <label for="Email">E-mail</label>
+                    <input type="email" name="Email" id="Email" required>
+                    <label for="Importance">Važnost poruke</label>
+                    <select name="Importance" id="Importance">
+                        <option value="niska">Niska</option>
+                        <option value="visoka">Visoka</option>
+                    </select>
+                    <label for="Message">Poruka</label>
+                    <textarea name="Message" id="Message" required></textarea>
+                    <div id="NewsletterGroup">
+                        <label for="ReceiveNewsletter">Želim primati obavijesti</label>
+                        <input type="checkbox" name="ReceiveNewsletter" id="ReceiveNewsletter" value="true">
+                    </div>
+                    <input type="submit" value="Pošalji" id="send">
+                </form>
+            </div>
+        </div>
+
+        <div id="header">
+            <img src="img/galerija/novost2.jpg" alt="Novost 2">
+        </div>
+
+        <div id="tekst">
+            <h2 id="Naslov">Stipendijski natječaj šk.god 2018./2019.</h2>
+
+            <p> Nakon velikog broja prijava koje smo primili, detaljnom
+                analizom i provjerom utvrdili smo dobitnike ovogodišnjeg
+                stipendijskog natječaja za maturante! Stipendiju u
+                vrijednosti od 10.000,00 kuna na potrošačkoj kartici
+                dobivaju: Heidi Sokolovski iz Zagreba - za najbolji
+                rezultat iz Matematike na A razini osvojila je
+                stipendiju u iznosu od 10.000,00 kn. Tereza Žugaj iz
+                Zagreba - za najbolji rezultat iz Matematike na B razini
+                osvojila je stipendiju u iznosu od 10.000,00 kn. Dalija
+                Romac iz Sinja - za najbolji rezultat iz Hrvatskog
+                jezika na A razini te dodatna 204 boda za rezultat iz
+                Matematike A i Engleskog jezika A osvojila je stipendiju
+                u iznosu od 10.000,00 kn. Ella Milinović iz Zagreba - za
+                najbolji rezultat iz Hrvatskog jezika na B razini
+                osvojila je stipendiju u iznosu od 10.000,00 kn. Borna
+                Skračić iz Zadra – za najbolji rezultat iz Engleskog
+                jezika na A razini osvojio je stipendiju u iznosu od
+                10.000,00 kn. Lukas Božić iz Umaga - za najbolji
+                rezultat iz Engleskog jezika na B razini osvojio je
+                stipendiju u iznosu od 10.000,00 kn.</p>
+        </div>
+
+        <div class="kontrole">
+            <button class="prev" onclick="window.location.href='novost1.html'"> &#10094 Prethodna Novost </button>
+            <button class="next" onclick="window.location.href='novost3.html'"> Iduća Novost &#10095 </button>
+        </div>
+
+        <div id="footer">
+            <h2>Budi izvrstan u onom što voliš</h2>
+            <h2 id="zaiskri">Zaiskri</h2>
+        </div>
+
+    </div>
+
+    <div id="footerLogo">
+        <img src="img/Algebra-logo.png" alt="Algebra logo">
+        <p>Visoko sveučilište Algebra Bernays</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(23,23,23);
+    color: white;
+}
+
+#poranajDole{
+    margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#poranajDole #naslov{
+    font-size: 3em;
+    border-bottom: 1px solid orange;
+    width: 25%;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#content #kolegiji{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#content #kolegiji label{
+    border-bottom: 2px solid orange;
+    margin-bottom: 5px;
+}
+
+#content #kolegiji #lijevo{
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+}
+
+#content #kolegiji #lijevo input{
+    font-size: 1em;
+    width: 100%;
+
+}
+
+#content #kolegiji #desno table{
+    border: 3px solid purple;
+    table-layout: fixed;
+}
+
+#content #kolegiji #desno thead tr th{
+    width: auto;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#content #kolegiji #desno tbody tr td{
+    width: 100px;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1%;
+}
+
+#content #kolegiji #desno tfoot tr td{
+    width: 100px;
+    font-size: 1.5em;
+    text-align: center;
+    color: orange;
+}
+
+#content #kolegiji #lijevo ul{
+    list-style-type: none;
+    cursor: pointer;
+
+}
+
+#content #kolegiji #lijevo ul li{
+    border: 1px solid orange;
+    padding: 0.4%;
+}
+
+#content tr td button{
+    background-color: red;
+    font-size: 2em;
+}
+
+#content tr td button:hover{
+    background-color: rgb(159, 35, 35);
+}
+
+#content #kolegiji #desno table{
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    /*za mobitele da radi*/
+
+    #content #footer h2 {
+        font-size: 2em;
+        width: 90%;
+    }
+
+    #content #kolegiji {
+        flex-direction: column;
+        width: 95%;
+        font-size: 1.2em;
+    }
+
+    #content #poranajDole{
+        margin-top: 52%; /*da ne smeta veliki meni*/
+    }
+
+
+    #content #kolegiji #lijevo,
+    #content #kolegiji #desno {
+        width: 100%;
+        margin-top: 5%;
+        font-size: 0.6em;
+    }
+
+    #content #kolegiji #desno table tr td{
+        word-break: break-word;
+    }
+
+    #content #kolegiji #lijevo #kolegijNaziv {
+        width: 100%;
+    }
+
+
+    #content #kolegiji #desno table {
+        width: 100%;
+        border-spacing: 10px;
+        font-size: 0.9em;
+    }
+
+    #content #naslov {
+        width: 90%;
+        font-size: 2em;
+    }
+
+    .modal {
+        width: 95%;
+    }
+
+    #content #kolegiji label{
+        font-size: 2em;
+    }
+
+    #content #kolegiji #lijevo #kolegijNaziv{
+       font-size: 2em;
+    }
+
+    #content #kolegiji #desno table{
+        font-size: 0.5em;
+        margin-bottom: 80px;
+    }
+}

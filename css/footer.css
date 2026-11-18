@@ -1,0 +1,33 @@
+#footerLogo{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    background-color: rgb(21,21,21);
+    animation: changeColor 1s ease-in infinite alternate;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes changeColor {
+    from{
+        color: purple;
+    }
+    to{
+        color: orange;
+    }
+}
+
+#footerLogo img{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#footerLogo p{
+    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}

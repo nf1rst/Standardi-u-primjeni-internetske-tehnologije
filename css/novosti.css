@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    /*bitno tako da na footeru mozes stavit margin top auto i da se sam povuce do kud moze dolje*/
+}
+
+#text{
+    margin-top: 1.5%;
+}
+
+.naslov{
+    width: 40%;
+    font-size: 3em;
+    border-bottom: 2px solid orange;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+#novosti-area{
+    margin: 1%;
+}
+
+#novosti-width{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.novost{
+    width: 30%;
+    overflow: hidden;
+    border: 1px solid white;
+    padding: 0.5%;
+    display: flex;
+    flex-direction: column;
+}   
+
+.novost img {
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+}
+
+.novost .novost-datum{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: purple;
+    font-size: 2em;
+}
+
+.novost .novost-naslov{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.novost .novost-Vise{
+    text-decoration: none;
+    background-color: purple;
+    border-radius: 5px;
+    width: 15%;
+    text-align: center;
+    padding: 1%;
+    color: white;
+    margin-top: auto; /*ovo osigurava da su svi vise na istoj razini*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.novost-Vise:hover{
+    background-color: rgb(196, 112, 196);
+}
+
+#content #footer{
+    background-image: url(../img/zaiskri-bg.jpg);
+    height: 350px;
+    background-size:cover;
+    background-position:center; /*da se prikazuje srednji dio slike*/
+    margin-top: auto;
+}
+
+#content #footer h2{
+    text-transform: uppercase;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 3.5em;;
+    position: relative;
+    top: 25%;
+}
+
+#content #footer #zaiskri{
+    color: orange;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #content #text .naslov{
+        margin-top: 220px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content #text #novosti-area #novosti-width{
+        display: block;
+    }
+
+    #content #text #novosti-area #novosti-width .novost{
+        width: 100%;
+        margin-bottom: 15px;
+    }  
+
+    #content #footer {
+        height: 400px;
+    }
+
+    #content #footer h2{
+        width: 90%;
+        color: black;
+        position: relative;
+        top: 0%;
+        bottom: 0%;
+    }
+}

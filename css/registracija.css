@@ -1,0 +1,112 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(23, 23, 23);
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+
+#content #title{
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4em;
+    margin-top: 5%;
+}
+
+#content #register{
+    border: 2px solid orange;
+    width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2%;
+    text-align: left;
+    border-radius: 30px;
+}
+
+#content #register form{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+#content #register form label{
+    font-size: 1.5em;
+}
+
+#content #register form input{
+    font-size: 1.5em;
+}
+
+#content #register form #submit{
+    background-color: purple;
+    margin-top: 5%;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+#content #menu ul li a:hover{
+    color: orange;
+}
+
+#content #register form #submit:hover{
+    background-color: rgb(229, 141, 9);
+}
+
+#content #menu ul li #kontakt {
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: rgb(32, 32, 32);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 5%;
+    transition: 0.5s;
+}
+
+#content #menu ul li #kontakt:hover{
+    color: orange;
+}
+
+#content #register #registerForm a{
+    color: orange;
+    text-decoration: none;
+    border-bottom: 1px solid orange;
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    /*za mobitele da radi*/
+
+    #content{
+        width: 100%;
+    }
+
+    #content #title{
+        margin-top:250px ;
+        width: 90%;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    #content #register{
+        width: 90%;
+    }
+
+    #content #register #registerForm a{
+    color: orange;
+    text-decoration: none;
+    border-bottom: 1px solid orange;
+    width: 48%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+}

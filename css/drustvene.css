@@ -1,0 +1,71 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+#text{
+    width: 100%;
+}
+
+#baloni{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: right;
+    flex-wrap: wrap; /*da ode 2 pa novi red*/
+}
+
+.balon{
+    border: 1px solid orange;
+    width:49%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    margin-top: 1%;
+}
+
+#text{
+    margin-top: 5%;
+}
+
+.balon a{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.balon a {
+    text-decoration: none;
+    color: purple;
+}
+
+.balon:hover{
+  box-shadow: 0px 0px 20px orange;
+}
+
+.balon a video{
+    height: 200px;
+    width: 200px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  #text{
+    margin-top: 70%;
+  }
+
+  #baloni{
+    display: flex;
+    gap: 20px;
+  }
+
+  .balon{
+    width: 100%;
+  }
+
+}

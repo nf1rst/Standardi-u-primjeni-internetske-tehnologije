@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#content #header img{
+    height: 350px;
+    width: 100%;
+    object-fit:cover;
+    margin-top: 2%; /*incce se lica ne vide*/
+}
+
+#content #tekst{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2%;
+    font-size: 1.2em;
+}
+
+
+#content #tekst #Naslov{
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid orange;
+    margin-bottom: 3%;
+}
+
+#content #tekst p{
+    text-align: justify;
+}
+
+#content #footer{
+    background-image: url(../img/zaiskri-bg.jpg);
+    height: 300px;
+    background-size:cover;
+    background-position:center; /*da se prikazuje srednji dio slike*/
+}
+
+#content #footer h2{
+    text-transform: uppercase;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 3.5em;;
+    position: relative;
+    top: 25%;
+    left: 0%;
+}
+
+#content #footer #zaiskri{
+    color: orange;
+}
+
+#content #menu ul li #kontakt {
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: rgb(32, 32, 32);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+#content #menu ul li #kontakt:hover{
+    color: orange;
+}
+
+.kontrole{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.kontrole .prev, .next {
+    font-size: 2em;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(21,21,21);
+    color: white;
+}
+
+.prev:hover{
+    background-color: orange;
+}
+
+.next:hover{
+    background-color: purple;
+}
+
+@media screen and (max-width: 768px) {
+
+    #content #header{
+        width: 100%;
+        margin-top: 200px;
+    }
+
+
+
+    #content {
+        width: 100%;
+
+    }
+
+    #content #tekst {
+        width: 100%;
+    }
+
+    #content #tekst #Naslov{
+        width: 90%;
+    }
+
+    #content #tekst p{
+        width: 90%;
+        text-align: justify;
+        margin: auto;
+    }
+
+     #content #footer {
+        height: 400px;
+    }
+
+    #content #footer h2{
+        width: 90%;
+        color: black;
+        position: relative;
+        top: 0%;
+        bottom: 0%;
+    }
+
+        .kontrole{
+        width: 90%;
+    }
+
+    .kontrole .prev, .next{
+        font-size: 1em;
+    }
+
+}

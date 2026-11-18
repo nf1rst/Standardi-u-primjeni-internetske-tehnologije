@@ -1,0 +1,95 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    background-color: rgb(41, 39, 39);
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    padding: 1%;
+}
+
+.modal.open {
+    opacity: 1;
+    z-index: 999;
+    pointer-events: auto;
+}
+
+.modal .modal-inner {
+    width: 100%;
+}
+
+.modal .modal-inner .modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal .modal-inner .modal-header h2 {
+    border-bottom: 2px solid purple;
+    margin: 1%;
+    font-size: 2em;
+}
+
+.modal .modal-inner form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .modal-inner form label {
+    margin: 0.5%;
+    font-size: 1.5em;
+}
+
+.modal .modal-inner form input, .modal .modal-inner form select, .modal .modal-inner form textarea {
+    width: 90%;
+    margin-left: 0.5%;
+    font-size: 1.5em;
+}
+
+.modal .modal-inner form #Message {
+    height: 100px;
+}
+
+.modal .modal-inner form #NewsletterGroup{
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#ReceiveNewsletter{ 
+    accent-color:orange;
+    transform: scale(3); /*za input ne radi background color i fontsize nego ovo */
+}
+
+.modal .modal-inner .modal-header #closeModal {
+    background-color: rgb(179, 55, 55);
+    font-size: 2em;
+    height: 40px;
+    padding: 0px 12px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.modal .modal-inner form #send {
+    background-color: purple;
+    width: 50%;
+    margin-top: 2%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+}
+
+.modal .modal-inner form #send:hover{
+    background-color: orange;
+}
+

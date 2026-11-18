@@ -1,0 +1,117 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#content #menu {
+    background-color: rgb(32,32,32);
+    position: fixed;
+    width: 100%; 
+    z-index: 100;
+    top: 0px; /*inace se spusti dole negdje*/
+}
+
+#content #menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    gap: 3%;
+    padding: 0.5%;
+        margin: 0;
+
+}
+
+#content #menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+#content #menu ul li #kontakt {
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: rgb(32, 32, 32);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+#content #menu ul li #kontakt:hover{
+    border-bottom: 1px solid orange;
+}
+
+#content #menu ul li a:hover {
+    border-bottom: 1px solid orange;
+}
+
+#nofitikacijaContainer {
+    z-index: 10000;
+    background:linear-gradient(to right, red,rgb(206, 98, 9));
+    margin-top: 1%;
+    padding: 0.5%;
+    width: 20%;
+    position:fixed ;
+    top: 0;
+    right: 0;
+    border-radius: 25px;
+    border: 1px solid white;
+    right: -250px;
+    opacity: 0;
+    transition: right 0.5s, opacity 0.5s ease;
+}
+
+#nofitikacijaContainer.show{
+    opacity: 1;
+    right: 20px;
+}
+
+#nofitikacijaContainer h4 i{
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    /*za mobitele da radi*/
+
+     /* Mobile: center menu items vertically one-per-line with icons beside text */
+        #content #menu ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #content #menu ul li{
+        margin: auto;
+    }
+
+    #nofitikacijaContainer {
+    z-index: 10000;
+    background:linear-gradient(to right, red,rgb(206, 98, 9));
+    margin-top: 1%;
+    padding: 1%;
+    width: 30%;
+    position:fixed ;
+    top: 0;
+    right: 0;
+    border-radius: 25px;
+    border: 1px solid white;
+    right: -250px;
+    opacity: 0;
+    transition: right 0.5s, opacity 0.5s ease;
+    width: 55%;
+}
+
+#nofitikacijaContainer.show{
+    opacity: 1;
+    right: 20px;
+}
+
+#nofitikacijaContainer h4 i{
+    margin-right: 5px;
+}
+
+}
